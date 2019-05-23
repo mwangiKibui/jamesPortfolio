@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css?family=Kodchasan&display=swap');
+
+
+.img_logo{
+width:50px;
+height:50px
+}
+.Home{
+    background-image:url('../images/background_image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+
+}
+.navbar .transparent .nav-inner{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.underliner{
+    width:100%;
+    height:3px;
+    background-color:silver;
+    border-radius: 10px;
+    position: relative;
+    z-index:-1;
+}
+.underlinerInner{
+    top:0px;
+    left:0px;
+    position:absolute;
+    border-radius:10px;
+    width:10%;
+    height:100%;
+    background-color:blue;
+}
+.bigIcons
+{
+    display:block;
+    cursor:pointer;
+    font-size:45px;
+    color:seagreen;
+
+}
+.smallIcons{
+    display:block;
+    cursor:pointer;
+    font-size:10px;
+    color:seagreen;
+}
+.links{
+
+    color:seagreen;
+    font-size:20px;
+    cursor: pointer;
+    display:block;
+
+}
+.nav .navbar-nav{
+    display:inline-block;
+    color:#fff;
+
+}
+.nav .navbar-nav .nav-item{
+    color:#fff;
+    display:inline-block;
+}
+
+.cardHolder{
+    width:100%;
+    height:290px;
+    border-radius: 10px;
+    padding:0px;
+
+}
+.articlesImage{
+    width:100%;
+    height:100px;
+    border-radius:10px 10px 0px 0px;
+}
+.cardText{
+    display:inline-flex;
+    color:grey;
+}
+.formBtn{
+    border:none;
+    color:seagreen;
+    display:block;
+    margin: 0px;
+    background-color: transparent;
+    font-size:20px;
+}
+.small-underliner{
+    position: relative;
+    width:20px;
+    height:5px;
+    background-color:#3399ff;
+    border:none;
+    margin:10px 0px;
+}
+.subscribeContent{
+    position:relative;
+    width:100%;
+    padding:10px;
+    border-bottom: 1.5px solid #0099ff;
+    
+}
+.cardText{
+    display:block;
+    width:100%;
+
+}
+.cardWriter{
+    width:40%;
+}
+.cardFirst{
+    margin-right:5%;
+}

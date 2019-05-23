@@ -1,0 +1,225 @@
+/* we have to include the file
+for import no underscores or funny chars just the way it is
+*/
+@import 'config';
+@import 'utilities';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:1rem;
+    line-height:1.6;
+    background-color:#fff;
+    color:#333;
+}
+
+ul{
+    list-style:none;
+}
+//the navbar
+//aligning would be better with flex
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+    position:fixed;
+    z-index:1;
+    width:100%;
+    top:0px;
+    border-bottom:solid 1px $primary-color;
+    opacity:0.9;
+    ul{
+        display: flex
+    }
+    &-links{
+        color:#fff;
+        padding:0.45rem;
+        margin:0 0.25rem;
+        transition:all 0.2s ease-in-out;
+        &:hover{
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+            color:coral;
+        }
+    }
+    
+}
+//Lnading
+//the & gets replaced with what is up there
+.landing{
+    position:relative;
+    background:url('https://ak0.picdn.net/shutterstock/videos/23047210/thumb/1.jpg?i10c=img.resize(height:160)') no-repeat center center/cover;
+    height:100vh;
+
+    &-inner{
+        color:#fff;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        width:80%;
+        margin:auto;
+        align-items: center;
+        justify-content: center;        
+    }
+    &-buttons{
+        width:100%;
+        text-align:center;
+        &-icons{
+            color:mediumseagreen;
+            border:1px solid #fff;
+            margin-right:5px;
+            width:30px;
+            height:30px;
+            font-size:20px;
+            padding:3px;
+            transition:all 0.2s ease-in-out;
+            &:hover{
+                border:1px solid coral;
+            }
+        }
+    }
+}
+
+.icons{
+
+    color:seagreen;
+    font-size:18px;
+    margin:2px;
+    
+}
+.card-title {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.direct-links{
+    text-decoration:none;
+    color:seagreen;
+    font-size:40px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    padding:3px;
+    border:1px solid grey;
+    left:0px;
+    transition:all 0.2s ease-in-out;
+    &:hover{
+        border:1px solid #ff66ff;
+    }   
+}
+//all buttons do have borders
+.submitBtn{
+    border:none;
+    background-color:transparent;
+    border:1px solid grey;
+    padding:3px;
+    transition: all 0.2s ease-in-out;
+    &-icon{
+        font-size:30px;
+        color:seagreen;
+
+    }
+    &:hover{
+        border:1px solid #ff66ff
+    }
+}
+
+.blog{
+    width:100%;
+    border:none;
+    margin:none;
+    &-image{
+        width:100%;
+        height:160px;
+        padding:0px;
+    }
+    &-content{
+        background-color: #fff;
+        position:relative;
+        margin-top:-10%;
+        padding:10px;
+    }
+    &-heading{
+        font-family: 'Slabo 27px', serif;
+        color:grey;
+        font-weight:bold;
+
+    }
+    &-title{
+        font-display:'Titillium Web', sans-serif;
+        color:#000;
+        font-weight:bold;
+        cursor:pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+              text-decoration: none;
+              color:grey;       
+        }
+    }
+    &-p{
+        width:100%;
+        margin:0;
+        padding:0px;
+        display:block;
+        justify-content: space-between;
+    }
+    &-Span{
+        margin:0px 10px;
+        display:inline-block;
+    }
+    &-icon{
+        margin-top:-10px;
+        margin-left:3px;
+        font-size:25px;
+        color:seagreen;
+        font-family: 'Slabo 27px', serif;
+
+    }
+}
+.service{
+    width:100%;
+    margin:0px;
+    &-imageContainer{
+        width:100%;
+        height:130px;
+        border:none;
+        border-radius:5px 5px 0px 0px;
+        &-image{
+            width:100%;
+            height:100%;
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+    &-heading{
+        font-family:'Roboto Condensed', sans-serif;
+        font-size:18px;
+        color:lightskyblue;
+    }
+    &-Desc{
+        color:#000;
+        font-family: 'Slabo 27px', serif;
+        padding:5px;
+    }
+    &-Link{
+        font-size:30px;
+        color:seagreen;
+        border:1px solid grey;
+        padding:3px;
+        border-radius:none;
+        cursor: pointer;
+        transition:all 0.2s ease-in-out;
+        &:hover{
+            border:1px solid #0066cc;
+        }
+    }
+    
+}
