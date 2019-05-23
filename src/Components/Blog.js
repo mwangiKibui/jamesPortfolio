@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 import { Consumer } from '../Context';
 import Loader from './Loader';
 import { Link } from 'react-router-dom';
-import {IoIosEye } from 'react-icons/io'
-import { TiThumbsOk } from 'react-icons/ti';
+import {IoIosArrowRoundForward } from 'react-icons/io';
 
 
 class Blog extends Component {
@@ -56,8 +55,7 @@ class Blog extends Component {
                                          <Link to="/blogs/elem.BlogHeading" className="blog-title">{elem.blogHeading}</Link>
                                          
                                                <p className="blog-p">
-                                                <span className="spanContent"><IoIosEye className="blog-icon"/> {elem.blogViews}</span>
-                                                <span className="blog-Span"><TiThumbsOk className="blog-icon"/> {elem.blogClaps}</span>
+                                               <Link to=""><IoIosArrowRoundForward className="direct-links"/></Link>
                                                </p>
                                         
                                        </div>

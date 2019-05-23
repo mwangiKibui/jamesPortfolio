@@ -48,7 +48,7 @@ class Landing extends Component {
                  }else{
                      return(
                          
-                         <section className="LandingPage">
+                         <section className="LandingPage mb-4">
                            <Navbar />
                            <section className="landing">
                              <div className="dark-overlay">

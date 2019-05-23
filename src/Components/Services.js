@@ -41,7 +41,7 @@ class Services extends Component {
                                          <>
                                         <div className="col-md-3 col-sm-12 mt-5 mb-5 service">
                                         <div className="service-imageContainer">
-                                        <img src={service_img.url} alt="ServiceImage..." className="service-imageContainer-image" />
+                                        <img src={service_img.url} alt="ServiceImage..." className="service-imageContainer-image mb-2" />
                                         </div>
                                         <h5 className="service-heading text-center">{elem.service}</h5>
                                         <div className="service-Desc">

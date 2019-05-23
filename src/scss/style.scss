@@ -43,9 +43,10 @@ ul{
         display: flex
     }
     &-links{
+        white-space: nowrap;
         color:#fff;
         padding:0.45rem;
-        margin:0 0.25rem;
+        margin:0 0.03rem;
         transition:all 0.2s ease-in-out;
         &:hover{
             text-decoration: none;
@@ -92,11 +93,14 @@ ul{
 }
 
 .icons{
-
+    white-space: nowrap;
     color:seagreen;
     font-size:18px;
     margin:2px;
     
+}
+.cardWriter{
+    font-size:13px;
 }
 .card-title {
     font-family: 'Roboto Condensed', sans-serif;
@@ -143,12 +147,14 @@ ul{
         padding:0px;
     }
     &-content{
+        border:1px solid rgba(0,0,0,.4);
         background-color: #fff;
         position:relative;
-        margin-top:-10%;
+        margin-top:-15%;
         padding:10px;
     }
     &-heading{
+        width:100%;
         font-family: 'Slabo 27px', serif;
         color:grey;
         font-weight:bold;
@@ -202,7 +208,8 @@ ul{
     &-heading{
         font-family:'Roboto Condensed', sans-serif;
         font-size:18px;
-        color:lightskyblue;
+        color:#000;
+        font-weight:bold;
     }
     &-Desc{
         color:#000;

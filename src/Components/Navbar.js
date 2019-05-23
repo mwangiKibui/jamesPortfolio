@@ -43,7 +43,7 @@ export class Navbar extends Component {
                     <NavLink to="/services" onClick={this.handleScroll} className="navbar-links" activeStyle={{color:"red"}} >Services </NavLink>
                     <Link to="/blog" onClick={this.handleScroll}  className="navbar-links">Blog</Link>
                     <Link to="/articles" onClick={this.handleScroll} className="navbar-links">Articles</Link>
-                    <Link to="/more" onClick={this.handleScroll} className="navbar-links">For more</Link>
+                    <Link to="/more" onClick={this.handleScroll} className="navbar-links">more info</Link>
                   </ul>
            </nav>
            <Switch>
